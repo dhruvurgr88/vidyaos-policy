@@ -1,73 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms & Conditions - VidyaOS</title>
     <style>
-      body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-          Arial, sans-serif;
-        line-height: 1.6;
-        color: #334155;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 0 20px;
-        background-color: #f8fafc;
-      }
-      .card {
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        border: 1px solid #e2e8f0;
-      }
-      h1 {
-        color: #059669;
-        border-bottom: 2px solid #059669;
-        padding-bottom: 10px;
-      }
-      h2 {
-        color: #1e293b;
-        margin-top: 30px;
-      }
-      .bold {
-        font-weight: 700;
-        color: #0f172a;
-      }
-      a {
-        color: #059669;
-        text-decoration: none;
-      }
+        :root {
+            --primary-color: #059669; /* VidyaOS Green */
+            --text-main: #334155;
+            --text-header: #1e293b;
+            --bg-color: #f8fafc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e2e8f0;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            color: var(--text-header);
+            font-size: 1.4rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--text-header);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .contact-box {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .container { padding: 25px; }
+            h1 { font-size: 1.8rem; }
+        }
     </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Terms & Conditions</h1>
-      <p>Effective Date: March 4, 2026</p>
-      <p>
-        By downloading or using VidyaOS, these terms automatically apply to you.
-      </p>
+</head>
+<body>
 
-      <h2>Intellectual Property</h2>
-      <p>
-        All trademarks and copyrights belong to Dhruv Patel. You may not copy or
-        modify any part of the app or its source code.
-      </p>
+<div class="container">
+    <h1>Terms & Conditions</h1>
+    <p>Effective Date: <span class="highlight">2026-03-04</span></p>
 
-      <h2>Security</h2>
-      <p>
-        You are responsible for keeping your device secure. We advise against
-        rooting or jailbreaking your device.
-      </p>
+    <p>These terms and conditions apply to the <span class="highlight">VidyaOS</span> app (hereby referred to as "Application") for mobile devices that was created by <span class="highlight">Dhruv Patel</span> (hereby referred to as "Service Provider") as a Free service.</p>
 
-      <h2>AI Features</h2>
-      <p>
-        By using VidyaOS, you acknowledge that AI is used to process data to
-        provide specific educational features.
-      </p>
+    <p>Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application.</p>
 
-      <p><a href="index.html">Back to Privacy Policy</a></p>
+    <h2>1. Intellectual Property Rights</h2>
+    <p>Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.</p>
+
+    <h2>2. Changes to Service</h2>
+    <p>The Service Provider is dedicated to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to modify the Application or charge for their services at any time and for any reason. Any charges for the Application or its services will be clearly communicated to you.</p>
+
+    <h2>3. Data Security & Device Integrity</h2>
+    <p>The Application stores and processes personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone. The Service Provider strongly advises against <span class="highlight">jailbreaking or rooting</span> your phone. Such actions could expose your device to malware, viruses, and malicious programs, compromise security features, and result in the Application not functioning correctly.</p>
+
+    <h2>4. Connectivity Requirements</h2>
+    <p>Some functions of the Application require an active internet connection. The Service Provider cannot be held responsible if the Application does not function at full capacity due to lack of Wi-Fi or if you have exhausted your data allowance. If you use the application outside of a Wi-Fi area, your mobile network provider's agreement terms still apply, including data and roaming charges.</p>
+
+    <h2>5. User Responsibility</h2>
+    <p>The Service Provider cannot always assume responsibility for your usage of the application. For instance, it is your responsibility to ensure that your device remains charged. If your device runs out of battery and you are unable to access the Service, the Service Provider cannot be held responsible.</p>
+
+    <h2>6. Accuracy of Information</h2>
+    <p>While we strive to ensure that the Application is updated and accurate at all times, we rely on third parties to provide information to us. The Service Provider accepts no liability for any loss, direct or indirect, that you experience as a result of relying entirely on this functionality of the application.</p>
+
+    <h2>7. Artificial Intelligence (AI)</h2>
+    <p>The Application incorporates <span class="highlight">Artificial Intelligence (AI)</span> technologies to provide certain features. By using the Application, you acknowledge and agree that AI may be used to process data and deliver functionalities. All AI usage is designed to benefit the user experience and complies with applicable laws.</p>
+
+    <h2>8. Updates and Termination</h2>
+    <p>The Service Provider may wish to update the application at some point. You will need to download updates to continue using the application. The Service Provider does not guarantee compatibility with all operating system versions. We reserve the right to cease providing the application and may terminate its use at any time without notice.</p>
+
+    <div class="footer">
+        <h2>Changes to These Terms</h2>
+        <p>The Service Provider may periodically update their Terms and Conditions. You are advised to review this page regularly for any changes.</p>
+        
+        <div class="contact-box">
+            <span class="highlight">Contact Us:</span><br>
+            If you have any questions or suggestions, contact us at: <br>
+            <a href="mailto:dhruvpatelgurjar@gmail.com">dhruvpatelgurjar@gmail.com</a>
+        </div>
     </div>
-  </body>
+</div>
+
+</body>
 </html>
