@@ -1,104 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - VidyaOS</title>
     <style>
-      body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-          Arial, sans-serif;
-        line-height: 1.6;
-        color: #334155;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 0 20px;
-        background-color: #f8fafc;
-      }
-      .card {
-        background: white;
-        padding: 40px;
-        border-radius: 12px;
-        shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-        border: 1px solid #e2e8f0;
-      }
-      h1 {
-        color: #059669;
-        border-bottom: 2px solid #059669;
-        padding-bottom: 10px;
-        font-size: 2.2rem;
-      }
-      h2 {
-        color: #1e293b;
-        margin-top: 30px;
-        font-size: 1.5rem;
-      }
-      .bold {
-        font-weight: 700;
-        color: #0f172a;
-      }
-      .footer {
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #64748b;
-        border-top: 1px solid #e2e8f0;
-        padding-top: 20px;
-      }
-      a {
-        color: #059669;
-        text-decoration: none;
-        font-weight: 600;
-      }
+        :root {
+            --primary-color: #059669; /* VidyaOS Green */
+            --text-main: #334155;
+            --text-header: #1e293b;
+            --bg-color: #f8fafc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e2e8f0;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            color: var(--text-header);
+            font-size: 1.4rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--text-header);
+        }
+
+        .bullet-list {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .contact-box {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 20px 10px; }
+            .container { padding: 25px; }
+            h1 { font-size: 1.8rem; }
+        }
     </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Privacy Policy</h1>
-      <p><strong>VidyaOS</strong> - The Future of Schooling</p>
-      <p>Effective Date: March 4, 2026</p>
+</head>
+<body>
 
-      <p>
-        This privacy policy applies to the
-        <span class="bold">VidyaOS</span> application created by
-        <span class="bold">Dhruv Patel</span> as a Free service. This service is
-        intended for use "AS IS".
-      </p>
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: <span class="highlight">2026-03-04</span></p>
 
-      <h2>Information Collection and Use</h2>
-      <p>
-        The Application collects information to provide administrative and
-        educational functionalities. This includes:
-      </p>
-      <ul>
-        <li>Device IP address and operating system version.</li>
-        <li>User data: Email, Age, Gender, and Educational Qualifications.</li>
-        <li>
-          <span class="bold">Academic Data:</span> Student grades, attendance,
-          and admission records.
-        </li>
-      </ul>
+    <p>This privacy policy applies to the <span class="highlight">VidyaOS</span> app (hereby referred to as "Application") for mobile devices that was created by <span class="highlight">Dhruv Patel</span> (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p>
 
-      <h2>AI Technology</h2>
-      <p>
-        The Application utilizes AI to enhance user experience. Data is
-        processed securely and is <span class="bold">never</span> used to train
-        public models.
-      </p>
+    <h2>Information Collection and Use</h2>
+    <p>The Application collects information when you download and use it. This information may include:</p>
+    <ul class="bullet-list">
+        <li>Your device's Internet Protocol address (e.g. IP address)</li>
+        <li>The pages of the Application that you visit, the time and date of your visit, and the time spent on those pages</li>
+        <li>The total time spent on the Application</li>
+        <li>The operating system you use on your mobile device</li>
+    </ul>
 
-      <h2>Account Deletion</h2>
-      <p>
-        Users may request account and data deletion via app settings or by
-        emailing
-        <a href="mailto:dhruvpatelgurjar@gmail.com"
-          >dhruvpatelgurjar@gmail.com</a
-        >.
-      </p>
+    <p>The Application <span class="highlight">does not</span> gather precise information about the location of your mobile device.</p>
 
-      <div class="footer">
-        <p>Contact: dhruvpatelgurjar@gmail.com</p>
-        <p><a href="terms.html">View Terms & Conditions</a></p>
-      </div>
+    <h2>Artificial Intelligence (AI) Technologies</h2>
+    <p>The Application uses Artificial Intelligence (AI) technologies to enhance user experience and provide certain features. The AI components may process user data to deliver personalized content, recommendations, or automated functionalities. All AI processing is performed in accordance with this privacy policy and applicable laws.</p>
+
+    <h2>Personal Information</h2>
+    <p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to <span class="highlight">Email, Age, Gender, and Educational Qualification</span>. This information will be retained and used as described in this privacy policy.</p>
+
+    <h2>Third Party Access</h2>
+    <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+    <ul class="bullet-list">
+        <li>As required by law, such as to comply with a subpoena or similar legal process.</li>
+        <li>When they believe in good faith that disclosure is necessary to protect rights, safety, or respond to a government request.</li>
+        <li>With trusted services providers who work on their behalf and adhere to the rules set forth in this privacy statement.</li>
+    </ul>
+
+    <h2>Data Retention Policy & Account Deletion</h2>
+    <p>The Service Provider will retain User Provided data for as long as you use the Application. If you'd like to request the deletion of your data, please contact us at <a href="mailto:dhruvpatelgurjar@gmail.com">dhruvpatelgurjar@gmail.com</a>.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>The Service Provider does not knowingly solicit data from or market to children under the age of 13. We encourage parents and legal guardians to monitor their children's Internet usage. If you believe a child has provided personally identifiable information, please contact us so that we can take necessary actions.</p>
+
+    <h2>Security</h2>
+    <p>The Service Provider is concerned about safeguarding the confidentiality of your information and provides physical, electronic, and procedural safeguards to protect the information processed and maintained.</p>
+
+    <h2>Consent</h2>
+    <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
+
+    <div class="footer">
+        <div class="contact-box">
+            <span class="highlight">Contact Us:</span><br>
+            If you have any questions regarding privacy or our practices, contact us at: <br>
+            <a href="mailto:dhruvpatelgurjar@gmail.com">dhruvpatelgurjar@gmail.com</a>
+        </div>
+        <p style="margin-top: 30px;">
+            <a href="terms.html">View Terms & Conditions</a>
+        </p>
     </div>
-  </body>
+</div>
+
+</body>
 </html>
