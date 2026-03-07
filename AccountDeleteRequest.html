@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request | VidyaOS</title>
+    <style>
+        :root {
+            --danger: #e11d48;
+            --primary: #6366f1;
+            --slate-50: #f8fafc;
+            --slate-100: #f1f5f9;
+            --slate-200: #e2e8f0;
+            --slate-700: #334155;
+            --slate-900: #0f172a;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--slate-50);
+            color: var(--slate-700);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: white;
+            max-width: 550px;
+            width: 90%;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--slate-200);
+            margin: 20px 0;
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: #fff1f2;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            color: var(--slate-900);
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 0 12px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .instruction-box {
+            background-color: var(--slate-100);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--slate-200);
+            margin-bottom: 24px;
+        }
+
+        .instruction-box h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0;
+            color: var(--slate-700);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .email-container {
+            display: flex;
+            align-items: center;
+            background: var(--slate-900);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .email-container:active {
+            transform: scale(0.98);
+        }
+
+        .warning-footer {
+            margin-top: 24px;
+            padding: 15px;
+            border-radius: 12px;
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            color: #991b1b;
+            font-size: 14px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="icon-box">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+    </div>
+
+    <h1>Account Deletion Request</h1>
+    <p>To delete your VidyaOS account and all associated data, please contact your school administrator or send an email to our support team.</p>
+
+    <div class="instruction-box">
+        <h2>Required Details</h2>
+        <ul>
+            <li>Your registered username</li>
+            <li>Full school name</li>
+            <li>Reason for deletion (optional)</li>
+        </ul>
+    </div>
+
+    <div class="email-container" onclick="copyEmail()">
+        <span id="emailAddr">dhruvpatelgurjar@gmail.com</span>
+        <small style="opacity: 0.7;">Click to Copy</small>
+    </div>
+
+    <div class="warning-footer">
+        <strong>Important:</strong> Requests are processed within 7 days. Once deleted, your data cannot be recovered.
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Privacy Policy</a>
+</div>
+
+<script>
+    function copyEmail() {
+        const email = document.getElementById('emailAddr').innerText;
+        navigator.clipboard.writeText(email);
+        alert('Support email copied to clipboard!');
+        window.location.href = "mailto:" + email + "?subject=Account Deletion Request&body=Username:%0ASchool Name:%0AReason:";
+    }
+</script>
+
+</body>
+</html>
